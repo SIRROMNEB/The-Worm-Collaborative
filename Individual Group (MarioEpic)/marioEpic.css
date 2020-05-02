@@ -1,0 +1,103 @@
+#home{
+	width: 120px;
+	height: 60px;
+	background-color: rgb(53,116,84);
+	left:1390px;
+	top:25px;
+	position: relative;
+	font-size: 30px
+}
+
+a{
+	color: white;
+}
+
+
+
+#longStem{
+	position: fixed;
+	background-color: rgb(50,185,45);
+	width: 40px;
+	height: 595px;
+	left: 180px;
+	top:230px;
+}
+
+
+
+	#short2{
+    position: relative;
+	background-color: grey;
+	width: 200px;
+	height: 40px;
+	left: 0px;
+	top:200px;
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+	}
+
+	#parent{
+		position: relative;
+		color: black;
+		background-color:grey;
+		font-size: 40px;
+		font-family: arial;
+		stroke: 5px;
+		width: 1020px;
+	    height: 190px;
+	    left: 250px;
+	    top:-210px;
+}
+
+
+#thumb1{
+		position: relative;
+		background-color: rgb(53,116,84);
+		width: 80px;
+	    height: 150px;
+	    left: 250px;
+	    top:-350px;
+	    border-radius: 6px;
+}
+
+#thumb2{
+		position: relative;
+		background-color: rgb(53,116,84);
+		width: 80px;
+	    height: 350px;
+	    left: 0px;
+	    top:210px;
+	    border-radius: 6px;
+}
+
+#lisa{
+	color: black;
+	font-size: 11pt;
+}
+#add{
+	position: relative;
+	left: 100px;
+	top:125px;
+	width: 80px;
+	background-color: rgb(53,116,84);
+	color:white;
+
+}
+
+
+#nameChange{
+	position: relative;
+	left: 380px;
+	top:300px;
+	width: 80px;
+	background-color: rgb(53,116,84);
+	color:white;
+
+}
+
+#jobs{
+	font-family: arial;
+	font-size:20px;
+	color:black;
+	width: 300px;
+	
