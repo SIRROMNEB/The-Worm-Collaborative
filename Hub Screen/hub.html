@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+<script src="hubScript.js"></script>
+<link rel="stylesheet" type="text/css" href="hub.css">
+<link rel="shortcut icon" type= "image/png" href="img/favicon.png">
+
+<div id=invigBubble style=" position:fixed; left:1120px; top:0; width:280px;height:250px;background-color: grey; border-bottom-right-radius:20px; border-bottom-left-radius:20px ">
+	<p>Welcome the hub screen, a page where teachers can navigate to differnet functionaility within the platfrom. Alongside that, teachers can assign indiviual wormeries a name and colour. This will be a great way of tables taking owensership of their learning.<br><br> <mark>Feel free to explore diffent aspects of the site through the mast head or the idividual wormeries.</mark> </p>
+</div>
+
+
+</head>
+
+<body>
+<top>
+
+<div id="welcome" <h1> Welcome back <br>  Clermiston Primary (P6)</div>
+</div>
+<buttonSection>
+<button id="update" onclick="window.location.href = 'updatingScreen.html';" onmouseover="mouseOver()" onmouseout="mouseOut()">Update class wormeries</button>
+<button id="submit" onclick="window.location.href = 'progressScreen.html';" onmouseover="mouseOver2()" onmouseout="mouseOut2()">View class progress</button>
+<button id="resources" onclick="window.location.href = 'resources.html';" onmouseover="mouseOver3()" onmouseout="mouseOut3()">Resources</button>
+
+<script>
+function mouseOver() {
+  document.getElementById("update").style.color = "rgb(53, 116,84)";
+}
+
+function mouseOut() {
+  document.getElementById("update").style.color = "black";
+}
+
+function mouseOver2() {
+  document.getElementById("submit").style.color = "rgb(53, 116,84)";
+}
+
+function mouseOut2() {
+  document.getElementById("submit").style.color = "black";
+}
+
+function mouseOver3() {
+  document.getElementById("resources").style.color = "rgb(53, 116,84)";
+}
+
+function mouseOut3() {
+  document.getElementById("resources").style.color = "black";
+}
+</script>
+</buttonSection>
+</top>
+
+<bottom>
+    <div style="position:relative; left:-30px; top:270px; width:1556px;height:450px;background-color: white;"></div>
+    
+    <div class= "greenCircle" style="background-color: rgb(50,165,45); position:fixed; left:90px; top:340px; width:160px;height:160px;border-radius: 50%;"onmouseover="mouseOverGreen()" onmouseout="mouseOutGreen()"></div>
+
+    <div class = "pinkCircle" style="background-color: rgb(255,110,176); position:fixed; left:90px; top:530px; width:160px;height:160px;border-radius: 50%;"onmouseover="mouseOverPink()" onmouseout="mouseOutPink()"></div>
+    
+    <div class = "yellowCircle" style="background-color: rgb(255,203,0); position:fixed; left:560px; top:340px; width:160px;height:160px;border-radius: 50%;"onmouseover="mouseOverYellow()" onmouseout="mouseOutYellow()"></div>
+
+    <div class = "purpleCircle" style="background-color: rgb(147,34,141); position:fixed; left:560px; top:530px; width:160px;height:160px;border-radius: 50%;"onmouseover="mouseOverPurple()" onmouseout="mouseOutPurple()"></div>
+
+    <div class= "blueCircle" style="background-color: rgb(99,152,255); position:fixed; left:1000px; top:340px; width:160px;height:160px;border-radius: 50%;"onmouseover="mouseOverBlue()" onmouseout="mouseOutBlue()"></div>
+    
+	<img id="greenWorm" src="WormeryOne.png" alt="worm" style= "transform: scale(0.6);position: fixed;left:60px;top:310px;">
+  <img id="pinkWorm" src="WormeryTwo.png" alt="worm" style= "transform: scale(0.6);position: fixed;left:60px;top:500px;">
+  <img id="yellowWorm" src="WormeryThree.png" alt="worm" style= "transform: scale(0.6);position: fixed;left:530px;top:310px;">
+  <img id="purpleWorm" src="WormeryFour.png" alt="worm" style= "transform: scale(0.6);position: fixed;left:530px;top:500px;">
+  <img id="blueWorm" src="WormeryFive.png" alt="worm" style= "transform: scale(0.6);position: fixed;left:970px;top:310px;">
+  <img id="addWorm" src="WormeryAdd.png" alt="worm" style= "transform: scale(0.6);position: fixed;left:970px;top:500px;">
+
+  
+  <div id= "marioEpic" style="font-size: 25px; top: 330px; left:270px; position: fixed; font-family: century gothic; font-weight: normal;"> marioepic(table1)</div>
+  <div id= "wigglyEater" style="font-size: 25px; top: 530px; left:270px; position: fixed; font-family: century gothic"> wigglyeater(table2)</div>
+  <div id= "table2Freinds" style="font-size: 25px; top: 330px; left:740px; position: fixed; font-family: century gothic"> table2friends(table3)</div>
+  <div id= "apples&Pears" style="font-size: 25px; top: 530px; left:740px; position: fixed; font-family: century gothic"> apples&pears(table4)</div>
+  <div id= "wormyHome" style="font-size: 25px; top: 330px; left:1170px; position: fixed; font-family: century gothic"> wormyhome(table5)</div>
+
+  <button id="viewProfile" onclick="window.location.href = 'marioEpic.html';" onmouseover="mouseOver()" onmouseout="mouseOut()"><a>View Profile<a></button>
+  <button id="viewProfile2" onclick="window.location.href = 'wigglyeater.html';" onmouseover="mouseOver()" onmouseout="mouseOut()"><a>View Profile<a></button>
+  <button id="viewProfile3" onclick="window.location.href = 'table2friends.html';" onmouseover="mouseOver()" onmouseout="mouseOut()"><a>View Profile<a></button>
+  <button id="viewProfile4" onclick="window.location.href = 'apples&pears.html';" onmouseover="mouseOver()" onmouseout="mouseOut()"><a>View Profile<a></button>
+  <button id="viewProfile5" onclick="window.location.href = 'wormyhome.html';" onmouseover="mouseOver()" onmouseout="mouseOut()"><a>View Profile<a></button>
+
+
+
+
+
+<script>
+  function mouseOverGreen() {
+  document.getElementById("greenWorm").style.top = "320px";
+  document.getElementById("marioEpic").style.color = "rgb(53, 116,84)" 
+   
+  
+}
+
+function mouseOutGreen() {
+  document.getElementById("greenWorm").style.top = "310px";
+   document.getElementById("marioEpic").style.color = "black"; 
+}
+
+function mouseOverPink() {
+  document.getElementById("pinkWorm").style.top = "510px";
+   document.getElementById("wigglyEater").style.color = "rgb(53, 116,84)";
+  
+}
+
+function mouseOutPink() {
+  document.getElementById("pinkWorm").style.top = "500px";
+   document.getElementById("wigglyEater").style.color = "black";
+   
+}
+
+ function mouseOverYellow() {
+  document.getElementById("yellowWorm").style.top = "320px";
+    document.getElementById("table2Freinds").style.color = "rgb(53, 116,84)";
+  
+}
+
+function mouseOutYellow() {
+  document.getElementById("yellowWorm").style.top = "310px";
+  document.getElementById("table2Freinds").style.color = "black";
+
+   
+}
+
+  function mouseOverPurple() {
+  document.getElementById("purpleWorm").style.top = "510px";
+   document.getElementById("apples&Pears").style.color = "rgb(53, 116,84)";
+  
+}
+
+function mouseOutPurple() {
+  document.getElementById("purpleWorm").style.top = "500px";
+   document.getElementById("apples&Pears").style.color = "black";
+   
+}
+
+  function mouseOverBlue() {
+  document.getElementById("blueWorm").style.top = "320px";
+   document.getElementById("wormyHome").style.color = "rgb(53, 116,84)";
+  
+}
+
+function mouseOutBlue() {
+  document.getElementById("blueWorm").style.top = "310px";
+   document.getElementById("wormyHome").style.color = "black";
+   
+}
+
+
+
+</script>
+
+
+</bottom
+
+</body>
+
+</html>
