@@ -1,0 +1,18 @@
+#table{
+width: 290px;
+height: 60px;
+position: fixed;
+top: 115px;
+left: 510px;
+font-family: century gothic;
+font-size: 25px;
+}
+
+#submit{
+	width: 150px;
+	height: 40px;
+	position: relative;
+	top:-80px;
+	left: 370px;
+	border-radius: 6%;
+}
