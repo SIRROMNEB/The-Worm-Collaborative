@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<title>Progress Screen</title>
+
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="progressScreen.css">
+	<script src="progressScreen.js"></script>
+	</head>
+
+
+	<body>
+		<mastHead>
+		<div id="mh" style= "width:1498px; height:80px; color:white; background-color: rgb(54,115,84); font-family: arial; font-size: 60px; padding-top: 10px; padding-left: 25px; ">View Progress</div>
+		<button id="home" style="font-size: 30px; background-color: white; width: 150px; height: 60px; border-radius: 6%; position: relative; left: 1270px; top: -75px" onclick="window.location.href = 'hub.html'"><a>home<a></button>
+			</mastHead>
+    </body>
+
+      <invigBubble>
+  	<div id="bubble" style="width:300px; height: 250px; position: fixed;left:1200px; top: 98px; background-color: grey; border-bottom-left-radius: 12px;color:white; border-bottom-right-radius: 12px; padding-left: 10px; padding-top: 10px">Welcome to the View Progress Screen - a place where teachers and students can view the progress of their wormery's in comparison to each other. The table also expresses how different factors have changed overtime.<br> Time periods are broken down into months (period 1 of weeks 1-4 would be week 1). Data is a direct result of the information collected from the weekly worksheet. <mark>Please click week beginning tabs to show the soil temperature example. <mark> </div>
+
+
+  </invigBubble>
+
+<div id="marioEpic" style="padding-top:5px; color:white; background-color: green; width: 140px; height:40px; position: fixed; top:370px; left:1200px;">marioEpic(table1)</div>
+<div id="wigglyeater"style="padding-top:5px; color:white; background-color: pink; width: 140px; height:40px; position: fixed; top:410px; left:1200px;">wigglyEater(table2)</div>
+<div id="table2friends"style="padding-top:5px; color:white; background-color: yellow; width: 140px; height:40px; position: fixed; top:450px; left:1200px;">table2friends(table3)</div>
+<div id="apples&pears"style="padding-top:5px; color:white; background-color: purple; width: 140px; height:40px; position: fixed; top:490px; left:1200px;">apples&pears(table4)</div>
+<div id="wormyHome"style="padding-top:5px; color:white; background-color: blue; width: 140px; height:40px; position: fixed; top:530px; left:1200px;">wormyhome(table5)</div>
+
+
+
+
+
+
+
+
+    <tableInformation>
+    	<div id="tableInformation" style="position: fixed;top:180px; left:40px; width: 1116px; height:530px; background-color: grey;font-family: arial">
+
+    </tableInformation>
+
+    <buttons>
+    <div id="week"  style="font-size:20px; position: fixed; top: 100px; left:240px; "> week beginning</div>
+    <button id="1-14" onclick="period1A(), period1B(), period1C(), period1D(), period1E()"style="background-color: grey;color: white; position:relative; left: 200px; top:-50px; width: 180px; height:50px">1-4</button>
+    <button id="1-14" onclick="period2A(), period2B(), period2C(), period2D(), period2E()" style="background-color: grey;color: white; position:relative; left: 200px; top:-50px; width: 180px; height:50px">4-8</button>
+    <button id="1-14" onclick="period3A(), period3B(), period3C(), period3D(), period3E()" style="background-color: grey;color: white; position:relative; left: 200px; top:-50px; width: 180px; height:50px">8-12</button>
+    <button id="1-14" onclick="period4A(), period4B(), period4C(), period4D(), period4E()" style="background-color: grey;color: white; position:relative; left: 200px; top:-50px; width: 180px; height:50px">12-16</button>
+    <button id="1-14" onclick="period5A(), period5B(), period5C(), period5D(), period5E()" style="background-color: grey;color: white;position:relative; left: 200px; top:-50px; width: 180px; height:50px">16-20</button>
+    </buttons>
+
+    <canvas id="myCanvas" width="925" height="439" style="background-color: rgb(54, 115, 84); position: fixed; left:230px; top:180px">
+
+
+    <axis>
+    <div id="yaxis" style="position: fixed; left:200px; top: 100px; background-color: white; width: 40px; height:550px">
+    <div id="xaxis" style="position: relative; left:0px; top: 520px; background-color: white; width: 1000px; height:40px">
+    <axis>
+
+    <tableDescription>
+    <div id="0" style="position: fixed; left:150px; top: 610px; background-color: white; width: 30px; height:6px"></div>
+    <div id="5" style="position: relative; left:-50px; top: -60px; background-color: white; width: 30px; height:6px"></div>
+    <div id="10" style="position: relative; left:-50px; top: -120px; background-color: white; width: 30px; height:6px"></div>
+    <div id="15" style="position: relative; left:-50px; top: -180px; background-color: white; width: 30px; height:6px"></div>
+    <div id="20" style="position: relative; left:-50px; top: -240px; background-color: white; width: 30px; height:6px"></div>
+    <div id="25" style="position: relative; left:-50px; top: -300px; background-color: white; width: 30px; height:6px"></div>
+    <div id="30" style="position: relative; left:-50px; top: -360px; background-color: white; width: 30px; height:6px"></div>
+    <div id="35" style="position: relative; left:-50px; top: -420px; background-color: white; width: 30px; height:6px"></div>
+   
+    <div id="period1" style="width:5px; height:450px; left: 220px;top: -484px; position: relative; background-color: white">
+    <div id="period2" style="width:5px; height:450px; left: 184px;top: 0px; position: relative; background-color: white">
+    <div id="period3" style="width:5px; height:450px; left: 184px;top: 0px; position: relative; background-color: white">
+    <div id="period4" style="width:5px; height:450px; left: 184px;top: 0px; position: relative; background-color: white">
+
+    <div id="zero" style="font-family: arial; font-size: 20px; position: fixed; left: 115px; top:605px">0</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 115px; top:550px">5</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 110px; top:498px">10</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 110px; top:446px">15</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 110px; top:390px">20</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 110px; top:335px">25</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 110px; top:280px">30</div>
+    <div id="five" style="font-family: arial; font-size: 20px; position: fixed; left: 110px; top:230px">35</div>
+
+
+    <div id="period1" style="font-family: arial; font-size: 20px; position: fixed; left:370px; top:670px">period one</div>
+    <div id="period2" style="font-family: arial; font-size: 20px; position: fixed; left:550px; top:670px">period two</div>
+    <div id="period3" style="font-family: arial; font-size: 20px; position: fixed; left:730px; top:670px">period three</div>
+    <div id="period3" style="font-family: arial; font-size: 20px; position: fixed; left:930px; top:670px">period four</div>
+   
+   
+
+    </tableDescription>
+
+
+
+
+    <update>
+    	<button id="home" style="font-size: 30px; background-color: white; width: 150px; height: 60px; border-radius: 6%; position: fixed; left: 1250px; top: 650px" onclick="window.location.href = 'updatingScreen.html'"><a>update<a></button>
+    	</update>
+
+
+    	 <label for="table"></label>
+
+<select id="factor" style="position: fixed; left: 40px; top:130px; width: 160px; height: 40px; font-size: 18px">
+  <option value="soil temperature">soil temperature </option>
+  <option value="soil moisture">soil moisture </option>
+  <option value="soil texture">soil texture </option>
+  <option value="worm population">worm population</option>
+  <option value="worm tea">worm tea</option>
+
+
+
+
+
+
+
+
+
+	
+    </body>
+
+	<footer>
+	</footer>
+
+
+	</html>
